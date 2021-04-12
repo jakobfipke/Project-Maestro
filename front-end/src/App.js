@@ -15,8 +15,6 @@ import 'jquery/dist/jquery.min.js';
 import 'popper.js/dist/umd/popper.min.js';
 import 'bootstrap/dist/js/bootstrap.min.js';
 
-import React, { useState } from 'react';
-
 import {
   BrowserRouter as Router,
   Route,

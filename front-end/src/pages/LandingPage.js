@@ -7,7 +7,7 @@ import Logo from './../images/logo.jpg'
 const LandingPage = () => (
     <React.Fragment>
     <div className='LandingPage'>
-        <p className="landing-welcome">Welcome to Project Maestro</p>
+        <p className="landing-welcome">Welcome to Project Maestro - edited</p>
         <img className="landing-logo" src={Logo}/>
         <div className='login'>
             <a href='/login'>

@@ -12,6 +12,9 @@ on:
 defaults:
   run:
     working-directory: ./front-end
+    
+env:
+  CI: false
 
 jobs:
   build:
@@ -35,7 +38,7 @@ jobs:
       uses: actions/upload-artifact@v2
       with:
         name: node-app
-        path: .
+        path: ./front-end
 
   deploy:
     runs-on: ubuntu-latest

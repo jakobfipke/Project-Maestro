@@ -24,24 +24,24 @@ import {
 } from 'react-router-dom';
 
 function App() {
-  if (localStorage.getItem("userID") != undefined && localStorage.getItem("authToken") != undefined) {
-    return (
-      <Router>
-        <NavBar />
-        <div className="container">
-          <Switch>
-            <Route path="/" component={DashboardPage} exact />
-            <Route path="/outlines/:id" component={OutlinesPage} exact />
-            <Route path="/outlines/outline/:id" component={OutlinePage} exact />
-            <Route path="/outlines/outline/:id/project/" component={ProjectPage} exact />
-            <Route path="/outlines/outline/:id/project/join" component={JoinTeamPage} exact />
-            <Route path="/outlines/outline/:id/project/:projectId/goals" component={GoalsPage} exact />
-            <Route component={NotFoundPage} />
-          </Switch>
-        </div>
-      </Router>
-    );
-  } else {
+//   if (localStorage.getItem("userID") != undefined && localStorage.getItem("authToken") != undefined) {
+//     return (
+//       <Router>
+//         <NavBar />
+//         <div className="container">
+//           <Switch>
+//             <Route path="/" component={DashboardPage} exact />
+//             <Route path="/outlines/:id" component={OutlinesPage} exact />
+//             <Route path="/outlines/outline/:id" component={OutlinePage} exact />
+//             <Route path="/outlines/outline/:id/project/" component={ProjectPage} exact />
+//             <Route path="/outlines/outline/:id/project/join" component={JoinTeamPage} exact />
+//             <Route path="/outlines/outline/:id/project/:projectId/goals" component={GoalsPage} exact />
+//             <Route component={NotFoundPage} />
+//           </Switch>
+//         </div>
+//       </Router>
+//     );
+//   } else {
     return (
       <Router>
         <NavBar />
@@ -55,7 +55,7 @@ function App() {
         </div>
       </Router>
     );
-  }
+//   }
 }
 
 export default App;
